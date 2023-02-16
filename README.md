@@ -1,17 +1,17 @@
-class PalindromeExample{  
- public static void main(String args[]){  
-  int r,sum=0,temp;    
-  int n=454;//It is the number variable to be checked for palindrome  
-  
-  temp=n;    
-  while(n>0){    
-   r=n%10;  //getting remainder  
-   sum=(sum*10)+r;    
-   n=n/10;    
-  }    
-  if(temp==sum)    
-   System.out.println("palindrome number ");    
-  else    
-   System.out.println("not palindrome");    
-}  
-}  
+<!DOCTYPE html>
+<html>
+<body>
+
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+</body>
+</html>
+
