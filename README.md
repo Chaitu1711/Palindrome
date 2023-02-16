@@ -1,17 +1,27 @@
-<!DOCTYPE html>
-<html>
-<body>
+#include <iostream>
+using namespace std;
 
-<section>
-  <h1>WWF</h1>
-  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
-</section>
+bool isPalindrome(int x) {
+    int rem,reverse=0;
+    while(x!=0){    
+        rem=x%10;      
+        reverse=reverse*10+rem;    
+        x/=10;
+        if (x == reverse) return true;
+        else return false;
+    }
+    return true;
+}
 
-<section>
-  <h1>WWF's Panda symbol</h1>
-  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
-</section>
-
-</body>
-</html>
-
+int main() {
+    int n;
+    cin >>n;
+    
+    if(isPalindrome(n)) {
+        cout <<n<<" is a palindrome";
+    }
+    else {
+        cout << n<<" is NOT a palindrome";
+    }
+    return 0;
+}
